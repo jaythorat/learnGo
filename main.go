@@ -1,6 +1,6 @@
 package main
 
-import ("fmt")
+import ("fmt" ;"reflect")
 
 
 
@@ -8,7 +8,9 @@ func main() {
 	
 	a := 1
 
-	fmt.Println(a)
+	fmt.Println(a,reflect.TypeOf(a))
+	fmt.Printf()
+
 
 
 
