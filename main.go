@@ -12,8 +12,8 @@ func main() {
 	
 	var age int = 19
 	
-	if age > 18 {
-		fmt.Println("Adult")
+	for i:= 0 ; i<9 ; i++ {
+		fmt.Println("Hello",i)
 	}
 
 	fmt.Println(age)
