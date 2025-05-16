@@ -1,27 +1,23 @@
 package main
 
-import ("fmt"
-		"time")
+import ("fmt")
 
 
-func tp(ch chan string){
-	time.Sleep(1 * time.Second)	
-	fmt.Println("HI",<- ch)
-	ch <- "Gora"
-}
+
 
 
 
 
 func main() {
-	ch := make(chan string)
-	// go sayHello(ch)
-	// msg := <- ch
+	
+	var age int = 3
+	const jay = 3.12 // cannot update later
 
-	go tp(ch)
-	ch <- "Jayyyyyyy"
-	fmt.Println(" Jay")
-	fmt.Print(<-ch)
+	fmt.Println(age,jay)
+
+	age = 10
+	jay = 1 // throws error
+	fmt.Println(age, jay)
 
 
 }
