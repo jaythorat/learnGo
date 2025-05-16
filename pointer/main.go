@@ -8,26 +8,24 @@ func changeValue(p *int){ // this will receive add not variable value
 }
 
 
+type User struct{
+	Name string
+	age int
+}
+
+func changeName(p *User){
+	fmt.Println(p)
+	(*p).Name = "JAy"
+}
+
+
 func main(){
-	x := 10
-	y := &x
+	
+	user := User{Name: "JAY22",age:10}
+	fmt.Println(user)
+	changeName(&user)
+	fmt.Println(user)
 
-	fmt.Println("X has value :",x)
-	fmt.Println("Y has value :",*y)
-	*y = 25
-
-	var p *int
-
-	j := 1
-	p = &j
-
-	fmt.Println(x,y,p,*p)
-
-	jay := 50
-	fmt.Println("THIs is prior val", jay, "  on add :",&jay)
-	changeValue(&jay)
-
-	fmt.Println("THIs is final val", jay, "  on add :",&jay)
 
 
 	
