@@ -11,9 +11,14 @@ import ("fmt")
 func main() {
 	
 	var age int = 19
-	
-	for i:= 0 ; i<9 ; i++ {  
-		fmt.Println("Hello",i)
+	switch day:= "monday";day { // one line init and pass
+	case "monday":
+	fmt.Println("mon")
+	case "2":
+		fmt.Println("Jay")
+	default:
+		fmt.Println("xxx")
+
 	}
 
 	fmt.Println(age)
